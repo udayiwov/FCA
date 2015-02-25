@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="Generic template for fca Site Home Pages"
+    jcr:primaryType="cq:Template"
+    jcr:title="fca Site Home Page"
+    allowedPaths="[/content/fca(/.*)?]"
+    ranking="{Long}90">
+    <jcr:content
+        cq:allowedTemplates="[/apps/fca/templates/page]"
+        cq:template="/apps/fca/templates/homepage"
+        cq:designPath="/etc/designs/fca"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="fca/components/page/page-home">
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys"/>
+    </jcr:content>
+</jcr:root>
